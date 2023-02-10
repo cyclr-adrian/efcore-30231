@@ -34,7 +34,7 @@ namespace MyProject.Data
         private static DbContextOptions<MyProjectObjectContext> GetMySQLContextOptions()
         {
             var builder = GetDbContextOptionsBuilder()
-                .UseMySql("Database=cyclr2;DataSource=localhost;Uid=cyclr;Password=cyclr;AllowUserVariables=true;Pooling=true;Convert Zero Datetime=true;", new MySqlServerVersion(new Version(major: 5, minor: 7, build: 37)));
+                .UseMySql("Database=my_project_db;DataSource=localhost;Uid=my_project_user;Password=my_project_password;AllowUserVariables=true;Pooling=true;Convert Zero Datetime=true;", new MySqlServerVersion(new Version(major: 5, minor: 7, build: 37)));
 
             return builder.Options;
         }

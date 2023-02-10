@@ -12,7 +12,7 @@ IHost host = Host.CreateDefaultBuilder(args)
 {
     services.AddDbContext<MyProjectObjectContext>(options =>
     {
-        options.UseMySql("Database=cyclr2;DataSource=localhost;Uid=cyclr;Password=cyclr;AllowUserVariables=true;Pooling=true;Convert Zero Datetime=true;", new MySqlServerVersion(new Version(major: 5, minor: 7, build: 37)));
+        options.UseMySql("Database=my_project_db;DataSource=localhost;Uid=my_project_user;Password=my_project_password;AllowUserVariables=true;Pooling=true;Convert Zero Datetime=true;", new MySqlServerVersion(new Version(major: 5, minor: 7, build: 37)));
     });
 })
 .Build();
